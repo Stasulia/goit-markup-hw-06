@@ -74,6 +74,25 @@ a {
 
 .
 /* Base styles */
+
+/* Base styles for small devices */
+.container {
+ min-width: 320px;
+ max-width: 428px;
+ margin-left: auto;
+ margin-right: auto;
+ padding-right: 16px;
+ padding-left: 16px;
+
+  /* width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px; */
+
+ 
+  outline: 2px solid red;
+  outline-offset: -2px; 
+}
+
 .subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -91,13 +110,7 @@ a {
   color: var(--main-dark-cl);
   margin-bottom: 72px;
 }
-.container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 /* Logo styles */
 .logo {
   font-family: 'Raleway', sans-serif;
