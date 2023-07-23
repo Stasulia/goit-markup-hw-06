@@ -543,6 +543,9 @@ a {
   width: 1128px;
 }
 }
+.section-team-item {
+
+}
 @media only screen and (max-width: 767px) {
   .section-team-item:not(:last-child) {
     margin-bottom: 72px;
@@ -607,25 +610,71 @@ a {
   fill: var(--main-light-cl);
 }
 /*Footer section*/
+
 .footer .container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 72px;
+  margin: 0 auto;
 }
-
+/*align-items: baseline;*/
 .footer {
+  width: 100%;
   background: var(--main-dark-cl);
   color: var(--main-light-cl);
+  padding-top: 97.5px;
+  padding-bottom: 96px;
+}
+@media screen and (min-width: 768px) {
+  .footer .container {
+display: flex;
+flex-wrap: wrap;
+text-align: left;
+flex-direction: row;
+gap: 0;
+padding-left: 108px;
+padding-right: 164px;
+}
+}
+@media screen and (min-width: 1158px) {
+.footer {
   padding-top: 100px;
   padding-bottom: 100px;
-  display: flex;
+  align-items: baseline;
+}
 }
 .discription-container {
-  margin-right: 120px;
+  text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .discription-container {
+    margin: 0;
+    margin-right: 24px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .discription-container {
+    margin-right: 120px;
+  }
+}
+.footer-text {
+  width: 268px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+}
+@media screen and (min-width: 768px) {
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
+}
 }
 .footer .logo {
   display: inline-block;
@@ -665,28 +714,52 @@ a {
   fill: ;
 }
 .social-container {
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .social-container {
+    text-align: left;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1158px) {
+.social-container {
   margin-right: 80px;
 }
+}
+
+.subscribe-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+@media screen and (min-width: 1158px) {
 .subscribe-container {
   margin-right: 0;
 }
+}
 .title-subscribe {
   color: var(--accent-cl);
-  margin-bottom: 16px;
   font-size: 16px;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
   font-weight: 500;
   line-height: 1.5;
 }
 .subscribe-form {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 auto;
 }
 .subscribe-form-label {
- 
+  width: 100%;
 }
 .subscribe-form-input {
-  width: 264px;
+  width: 100%;
   height: 40px;
   border-radius: 4px;
   border: 1px solid var(--accent-cl);
@@ -697,6 +770,11 @@ a {
   line-height: 1.5;
   letter-spacing: 0.04em;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); 
+}
+@media screen and (min-width: 768px) {
+.subscribe-form-input {
+  width: 264px;
+}
 }
 .subscribe-form-input::placeholder {
   color: currentColor;
