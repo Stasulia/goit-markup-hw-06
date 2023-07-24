@@ -476,6 +476,7 @@ a {
   justify-content: center;
   height: 112px;
   margin-bottom: 8px;
+  background-color: var(--main-light-cl);
 }
 }
 /*What are we doing section*/
