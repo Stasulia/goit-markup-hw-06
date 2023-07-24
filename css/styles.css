@@ -81,7 +81,6 @@ a {
  max-width: 428px;
  margin-left: auto;
  margin-right: auto;
- outline: 2px solid red;
  padding-right: 15px;
  padding-left: 15px;
 }
@@ -763,14 +762,9 @@ padding-right: 164px;
 }
 }
 
-/*.subscribe-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+.subscribe-container {
   text-align: center;
-  margin: 0 auto;
-  flex-direction: column;
-}*/
+}
 /*@media screen and (min-width: 768px) {
   .subscribe-container {
     width: 453px;
@@ -1384,7 +1378,9 @@ margin-bottom: 40px;
     font-size: 24px;
   }
 }
-
+.is-active {
+  color: #404BBF;
+}
 .mobile-item {
   width: 40px;
   height: 40px;
