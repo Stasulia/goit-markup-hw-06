@@ -683,9 +683,13 @@ padding-right: 164px;
   .discription-container {
   margin-bottom: 72px;
   margin-right: 24px;
-  text-align: left;
   }
 }
+@media screen and (min-width: 768px) {
+  .discription-container {
+    text-align: left;
+    }
+  }  
 @media screen and (min-width: 1158px) {
   .discription-container {
     margin-right: 120px;
@@ -762,8 +766,10 @@ padding-right: 164px;
 }
 }
 
+@media screen and (max-width: 767.98px) {
 .subscribe-container {
   text-align: center;
+}
 }
 /*@media screen and (min-width: 768px) {
   .subscribe-container {
