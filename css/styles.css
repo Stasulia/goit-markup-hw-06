@@ -1323,8 +1323,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   top: 0;
   left: 0;
   width: 100vw;
-  /*height: 100vh;*/
-  height: 100%;
+  height: 100vh;
   background-color: var(--accent-cl);
   z-index: 999;
   transform: translateX(100%);
